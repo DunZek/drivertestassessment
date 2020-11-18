@@ -1,0 +1,61 @@
+/* Format:
+    // 1 - Handles the container
+    // 2 - Container handling the items
+    // 3 - Appearance of selected element
+    // 4 - Other
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+* body {
+  width: 100vw;
+  height: 100%;
+  background-color: #f4c2c2;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  transition: 1s;
+}
+* body[class=to_blue] {
+  background-color: #89cff0;
+}
+
+nav, main {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+nav section, main section {
+  width: 100%;
+  margin: 15%;
+  border-radius: 10px;
+}
+
+nav {
+  left: 0;
+  transition: 1s;
+}
+nav section {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f4f4f4;
+}
+
+nav[class=to_blue] {
+  left: 100%;
+}
+
+main {
+  left: -100%;
+  transition: 1s;
+}
+main section {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #111;
+}
+
+main[class=to_blue] {
+  left: 0;
+}
