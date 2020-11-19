@@ -6,7 +6,7 @@ const body = document.querySelector('body');
 body.addEventListener('mousemove', (mouseEvent) => {
 
     // Technical
-    const margin = 0.15
+    const margin = 0.1
     const margin_left = margin*window.innerWidth
     const margin_right = window.innerWidth - margin*window.innerWidth
     let xpos, ypos
@@ -32,5 +32,7 @@ body.addEventListener('mousemove', (mouseEvent) => {
         }
     }
 
-    console.log(xpos, ypos)
+    console.log(xpos)
 })
+
+console.log(window.innerWidth)
